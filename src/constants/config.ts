@@ -32,7 +32,7 @@ type TConfig = {
   } & TSection;
   sections: {
     about: Required<TSection>;
-    experience: TSection;
+    Formation: TSection;
     feedbacks: TSection;
     works: Required<TSection>;
   };
@@ -40,13 +40,13 @@ type TConfig = {
 
 export const config: TConfig = {
   html: {
-    title: "John Doe — 3D Portfolio",
-    fullName: "John Doe",
-    email: "johndoe@mail.com",
+    title: "Amine BENHAMMADA | Votre Futur Apprenti",
+    fullName: "Amine BENHAMMADA",
+    email: "schwamine777@gmail.com",
   },
   hero: {
-    name: "John Doe",
-    p: ["I develop 3D visuals, user", "interfaces and web applications"],
+    name: "Amine BENHAMMADA",
+    p: ["Étudiant en 1ère année Cycle d'ingénieur , École d'ingénieurs Sup Galilée.\nÀ la recherche d'une Alternance en Développement Fullstack, Web, Logiciel, DevOps, Cloud ou Data pour Septembre 2024. "],
   },
   contact: {
     p: "Get in touch",
@@ -66,29 +66,39 @@ export const config: TConfig = {
   sections: {
     about: {
       p: "Introduction",
-      h2: "Overview.",
-      content: `I'm a skilled software developer with experience in TypeScript and
-      JavaScript, and expertise in frameworks like React, Node.js, and
-      Three.js. I'm a quick learner and collaborate closely with clients to
-      create efficient, scalable, and user-friendly solutions that solve
-      real-world problems. Let's work together to bring your ideas to life!`,
+      h2: "Aperçu.",
+      content: `Je suis étudiant en première année du cycle d'ingénieurs à l'École d'Ingénieurs SUP Galilée. 
+      Doté d'une solide passion pour la programmation et les technologies émergentes, 
+      j'ai acquis une variété d'expériences dans différents langages et outils. 
+      Ma formation m'a permis de développer des compétences approfondies dans un large éventail de technologies, notamment :
+
+      - Langages de programmation : C, Java (y compris Swing et JavaFX), Python, OCAML, Assembleur LC-3
+      - Bases de données : SQL, MySQL, PostgreSQL
+      - Développement Web : HTML, CSS, JavaScript, TypeScript, React, Tailwind CSS
+      - Développement Backend : Node.js, PHP
+      - Outils de modélisation et de rendu 3D : Three.js
+      - Cloud : AWS(Débutant)
+      - Git, Github, GitLab, Docker
+      - Typesetting : LaTeX
+
+      Cette diversité de compétences m'a permis d'aborder des projets variés et de développer une compréhension holistique du développement logiciel, allant de la programmation système à la conception Web moderne. 
+      Je suis constamment motivé par le désir d'apprendre et de relever de nouveaux défis technologiques, et je suis impatient de mettre mes compétences au service de projets stimulants et innovants.`,
     },
-    experience: {
-      p: "What I have done so far",
-      h2: "Work Experience.",
+    Formation: {
+      p: "Formations Universitaires",
+      h2: "Parcours Académique.",
+      content: ``,
     },
     feedbacks: {
-      p: "What others say",
-      h2: "Testimonials.",
+      p: "Recommendations &",
+      h2: "Témoignages.",
     },
     works: {
-      p: "My work",
-      h2: "Projects.",
-      content: `Following projects showcases my skills and experience through
-    real-world examples of my work. Each project is briefly described with
-    links to code repositories and live demos in it. It reflects my
-    ability to solve complex problems, work with different technologies,
-    and manage projects effectively.`,
+      p: "Projets",
+      h2: "Académiques & Personnels.",
+      content: `Au cours de mon parcours académique et personnel, 
+      j'ai réalisé plusieurs projets qui m'ont permis d'améliorer mes compétences et d'explorer divers domaines de développement et différentes technologies. 
+      Chaque projet contient un lien vers le dépôt GitHub où vous pouvez trouver le code source ainsi que des live demos lorsque disponibles`,
     },
   },
 };

@@ -1,15 +1,15 @@
 import type {
   TNavLink,
   TService,
+  TFormation,
   TTechnology,
-  TExperience,
   TTestimonial,
   TProject,
 } from "../types";
 
 import {
+  C,
   mobile,
-  backend,
   creator,
   web,
   javascript,
@@ -17,31 +17,50 @@ import {
   html,
   css,
   reactjs,
-  redux,
   tailwind,
   nodejs,
-  mongodb,
   git,
-  figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
   threejs,
+  exa,
+  champ,
+  uspn,
+  katia,
+  yacine,
+  portf,
+  mb,
+  ph,
+  sup,
+  python,
+  java,
+  uml,
+  ubuntu,
+  pr,
+  ps,
+  ai,
+  lr,
+  ae,
+  ocaml,
+  php,
+  latex,
+  sql,
+  lc3,
+  intellij,
+  vs,
+  train,
+  sac,
+  taut,
+  vb,
 } from "../assets";
 
 export const navLinks: TNavLink[] = [
   {
     id: "about",
-    title: "About",
+    title: "Aperçu",
   },
   {
-    id: "work",
-    title: "Work",
+    id: "formation",
+    title: "Formation",
   },
   {
     id: "contact",
@@ -51,22 +70,67 @@ export const navLinks: TNavLink[] = [
 
 const services: TService[] = [
   {
-    title: "Web Developer",
+    title: "Full-Stack Developer",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "AWS Beginner",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
-    icon: backend,
+    title: "International Volley-Ball Player",
+    icon: vb,
   },
   {
     title: "Content Creator",
     icon: creator,
   },
+
 ];
+
+const Formation: TFormation[] = [
+  {
+    title: "Baccalauréat série scientifique | Mention Très Bien.",
+    companyName: "Lycée Malek BENNABI | Algérie",
+    icon: mb,
+    iconBg: "#383E56",
+    date: "2019 - 2020",
+    points: [
+      "",
+    ],
+  },
+  {
+    title: "1ère Année Pharmacie",
+    companyName: "Faculté de Médecine, Sétif | Algérie",
+    icon: ph,
+    iconBg: "#E6DEDD",
+    date: "2020 - 2021",
+    points: [
+      "",
+    ],
+  },
+  {
+    title: "Licence Informatique",
+    companyName: "Université Sorbonne Paris Nord",
+    icon: uspn,
+    iconBg: "#383E56",
+    date: "2021 - 2024",
+    points: [
+      "",
+    ],
+  },
+  {
+    title: "1ère Année CYCLE INGENIEUR INFORMATIQUE",
+    companyName: "ÉCOLE d'Ingénieurs Sup Galilée",
+    icon: sup,
+    iconBg: "#E6DEDD",
+    date: "2024 - 2027",
+    points: [
+      "",
+    ],
+  },
+];
+
 
 const technologies: TTechnology[] = [
   {
@@ -90,20 +154,12 @@ const technologies: TTechnology[] = [
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
     name: "Tailwind CSS",
     icon: tailwind,
   },
   {
     name: "Node JS",
     icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
   },
   {
     name: "Three JS",
@@ -114,161 +170,268 @@ const technologies: TTechnology[] = [
     icon: git,
   },
   {
-    name: "figma",
-    icon: figma,
+    name: "docker",
+    icon: docker,
+  },
+  {
+    name: "C",
+    icon: C,
   },
   {
     name: "docker",
     icon: docker,
   },
+  {
+    name: "python",
+    icon: python,
+  },
+  {
+    name: "java",
+    icon: java,
+  },
+  {
+    name: "ocaml",
+    icon: ocaml,
+  },
+  {
+    name: "php",
+    icon: php,
+  },
+  {
+    name: "latex",
+    icon: latex,
+  },
+  {
+    name: "sql",
+    icon: sql,
+  },
+  {
+    name: "lc3",
+    icon: lc3,
+  },
+  {
+    name: "ubuntu",
+    icon: ubuntu,
+  },
+  {
+    name: "uml",
+    icon: uml,
+  },
+  {
+    name: "ps",
+    icon: ps,
+  },
+  {
+    name: "pr",
+    icon: pr,
+  },
+  {
+    name: "lr",
+    icon: lr,
+  },
+  {
+    name: "ai",
+    icon: ai,
+  },
+  {
+    name: "ae",
+    icon: ae,
+  },
+  {
+    name: "vs",
+    icon: vs,
+  },
+  {
+    name: "intellij",
+    icon: intellij,
+  },
+
 ];
 
-const experiences: TExperience[] = [
-  {
-    title: "React.js Developer",
-    companyName: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "React Native Developer",
-    companyName: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    companyName: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    companyName: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-];
 
 const testimonials: TTestimonial[] = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+      "quelqu'un de passionné par l'informatique et le développement que je connais depuis son tout premier bout de code. Amine impressionne par son évolution rapide en fullstack. Avidement curieux, il absorbe rapidement les enseignements et excelle grâce à son enthousiasme et sa capacité d'adaptation.",
+    name: "Yacine ALHUSSEIN",
+    designation: "Développeur FULL-STACK",
+    company: "Dassault Systèmes",
+    image: yacine,
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+      "Amine a fait preuve d'un très grand sérieux dans la Programmation Orientée Objet(JAVA), ce qui lui a permis de valider très brillamment l'UE POO avec la note de 16,5/20 ce qui le situe parmi les tout meilleurs étudiants de sa promotion.",
+    name: "Marc Champesme",
+    designation: "Computer Science Laboratory of Paris-North University (LIPN)",
+    company: "Université Sorbonne Paris Nord",
+    image: champ,
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+      "Amine était un étudiant exceptionnel en architecture et systèmes.Sa maîtrise de l'assembleur LC-3 et des systèmes informatiques, sa capacité à les appliquer dans des projets sont remarquables. Je recommande vivement Amine pour tout projet ou équipe.",
+    name: "Stefano Guerrini",
+    designation: "Responsable L2 Informatique | Professeur Architecture & Systèmes",
+    company: "Université Sorbonne Paris Nord",
+    image: uspn,
+  },
+  {
+    testimonial:
+      "Amine a été essentiel pour notre projet de simulateur de train. Son expertise en JavaScript, HTML et CSS a été remarquable. Je le recommande vivement pour son engagement et ses compétences techniques exceptionnelles.",
+    name: "Katia LARABI",
+    designation: "Étudiante en Master 1 Conception des Systèmes et Cyber Sécurité",
+    company: "Université Paris-Est Créteil (UPEC)",
+    image: katia,
   },
 ];
 
 const projects: TProject[] = [
   {
-    name: "Car Rent",
+    name: "OCTOPUNKS",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Octopunks un clône du Jeu Exapunks.",
     tags: [
       {
-        name: "react",
+        name: "JAVA",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "JAVAFX",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "SWING",
         color: "pink-text-gradient",
       },
+      {
+        name: "ASSEMBLY LC-3",
+        color: "blue-text-gradient",
+      },
     ],
-    image: carrent,
-    sourceCodeLink: "https://github.com/",
+    image: exa,
+    sourceCodeLink: "https://github.com/KESHRUD/OCTOPUNKS.git",
   },
+
   {
-    name: "Job IT",
+    name: "3D DEV PORTFOLIO",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Apprendre React.js et Three.js en codant son propre portfolio website ",
     tags: [
       {
-        name: "react",
+        name: "JavaScript",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "TypeScript",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "React.js",
         color: "pink-text-gradient",
       },
+      {
+        name: "Three.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Tailwind CSS",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "HTML",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "EmailJS",
+        color: "green-text-gradient",
+      },
     ],
-    image: jobit,
-    sourceCodeLink: "https://github.com/",
+    image: portf,
+    sourceCodeLink: "https://github.com/KESHRUD/3D-KUSH-DEV-PORTFOLIO.git",
   },
+
   {
-    name: "Trip Guide",
+    name: "Simulateur de Trains",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "un simulateur ferroviaire, où des trains avancent le long de rails sur un plateau en deux dimensions avec des conditions complexes.",
     tags: [
       {
-        name: "nextjs",
+        name: "JavaScript",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "HTML",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "CSS",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    sourceCodeLink: "https://github.com/",
+    image: train,
+    sourceCodeLink: "https://github.com/KESHRUD/Simulateur-de-Trains.git",
   },
+
+  {
+    name: "Résolution du Problème du Sac à dos 0/1",
+    description:
+      "Conception et analyse d'algorithmes (backtracking, programmation dynamique, approche gloutonne) pour résoudre le Problème. implémentation en Python & C avec expérimentations pour évaluer les performances en temps d'exécution et complexité spatiale.",
+    tags: [
+      {
+        name: "Pyhton",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "C",
+        color: "green-text-gradient",
+      },
+      {
+        name: "LaTeX",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Programmation Dynamique",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "BackTracking",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Analyse de Complexité & Optimisation",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: sac,
+    sourceCodeLink: "https://github.com/KESHRUD/Sac-dos-0-1.git",
+  },
+
+  {
+    name: "Tautologie en OCaml",
+    description:
+      "projet implémente un algorithme de vérification de tautologie en OCaml. Il prend en entrée une formule propositionnelle et détermine si elle est une tautologie ou non.",
+    tags: [
+      {
+        name: "OCaml",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "LaTeX",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Lambda-calcul",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Logique",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: taut,
+    sourceCodeLink: "https://github.com/KESHRUD/Tautologie.git",
+  },
+
+
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, Formation, testimonials, projects };

@@ -4,7 +4,7 @@ export type TCommonProps = {
   icon?: string;
 };
 
-export type TExperience = {
+export type TFormation = {
   companyName: string;
   iconBg: string;
   date: string;
